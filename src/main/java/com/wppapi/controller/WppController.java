@@ -35,8 +35,4 @@ public class WppController {
 		return new RestTemplate().postForEntity(URL + id + "/messages?access_token=" + token, mt, MessageTemplate.class);
 	}
 	
-	/*@GetMapping("/userId/{id}")
-	public User findUser(@PathVariable Integer id) {
-		
-	}*/
 }
